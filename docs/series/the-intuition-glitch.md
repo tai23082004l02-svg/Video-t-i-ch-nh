@@ -62,7 +62,6 @@ Birthday Paradox là tập đang triển khai, không phải yêu cầu sản xu
 
 - Medical Test / Base Rate: kết quả dương tính và tỷ lệ nền.
 - Simpson’s Paradox: kết quả đảo chiều khi gộp nhóm.
-- Waiting-Time / Inspection Paradox: tại sao dễ gặp khoảng chờ dài.
 - St. Petersburg Paradox: kỳ vọng vô hạn và số tiền thực tế sẵn sàng trả.
 - Two-Envelope Paradox: lập luận đổi phong bì mãi mãi.
 - Friendship Paradox: vì sao bạn bè có nhiều bạn hơn theo một số cách lấy mẫu.
@@ -90,3 +89,19 @@ Theo yêu cầu tiếp theo, bản `intuition-glitch-birthday-paradox-balanced.m
 ## Bố cục linh hoạt, ít khoảng trống
 
 Bản mới `videos/intuition-glitch-birthday-paradox-dynamic-layout.mp4` làm lớn và hạ minh họa theo từng cảnh, gọn phần tiêu đề, bỏ vài chú thích lặp lời đọc. Cảnh product/reveal dùng chung ProbabilityBreakdown, không reset/fade cả cảnh khi chuyển ý: phân số đang nhân khớp số người n; kết quả49,3% sẵn sàng trước câu khẳng định; sau đó phép trừ,50,7% và thanh xác suất mở ra. Kết quả phụ và chính đều cân giữa. Lịch, căn phòng, mạng lưới, biểu đồ và phần chốt có kích thước thích ứng; cảnh nhiều chữ được kiểm tra riêng. Audio, thời lượng, phụ đề Monty Hall và mốc outro như bản -balanced; SRT giống nhau.
+
+## Waiting-Time / Inspection Paradox — tập mới đã triển khai
+
+**Why You Wait Longer Than You Think — The Inspection Paradox**. Người dùng chọn chủ đề thứ ba trong danh sách đề xuất. Đây là bản mới để xem và phản hồi; chưa thay thế mẫu hình ảnh Birthday Paradox dynamic-layout đã được duyệt.
+
+- Nội dung: vì sao trung bình khoảng cách chuyến xe 10 phút không bảo đảm chờ trung bình 5 phút.
+- Mô hình minh họa luân phiên khoảng 2 và 18 phút, hành khách đến đều theo thời gian và độc lập lịch xe; mọi người lên được chuyến kế tiếp.
+- P(gặp khoảng ngắn) = 2/20 = 10%; P(gặp khoảng dài) = 18/20 = 90%.
+- E[chờ] = 0,1 × 1 + 0,9 × 9 = **8,2 phút**. Kiểm tra độc lập qua diện tích tam giác và 20 lượt đến ở giữa mỗi phút; không coi các khoảng xe liên tiếp là độc lập.
+- Đây không phải dữ liệu đo một tuyến xe thực tế. Canh giờ theo lịch/ứng dụng thay đổi mô hình lấy mẫu.
+- Kịch bản: `scripts/intuition-glitch/inspection-paradox.json`; generator: `tools/kokoro/make_inspection_paradox.py`.
+- Composition: `InspectionParadox`, nguồn `studio/src/InspectionParadox.tsx`, audio và cue riêng.
+- Bản giao: `videos/intuition-glitch-inspection-paradox.mp4`, `.srt`, `-script.md`.
+- Giữ Michael, Liberation Serif, phụ đề theo câu kiểu Monty Hall và outro chung bỏ 9 frame im lặng đầu.
+
+Kiểm tra bản dựng ngày 2026-11-01: render đủ **4.621 frame**, H.264 1080×1920 30fps + AAC, khoảng **154,05 giây**. Giải mã toàn bộ bằng FFmpeg không lỗi. Đã xem khung đại diện của câu hỏi, lịch đều/không đều, lấy mẫu, tính toán, biểu đồ, giả định, live tracker, kết và outro. SRT có 28 cue không chồng nhau, gồm outro. WAV 24 kHz mono có tín hiệu ở cả 25 đoạn lời đọc, không clipping. Chưa rà phát âm bằng nghe trực tiếp hoặc thử UI nền tảng đăng.

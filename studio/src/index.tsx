@@ -1,3 +1,4 @@
+import {InspectionParadoxComposition} from './InspectionParadox';
 import {BirthdayParadoxComposition} from './BirthdayParadox';
 import {SunkCostComposition} from './SunkCost';
 import {MovingGoalpostsAnimatedComposition} from './MovingGoalpostsAnimated';
@@ -21,4 +22,4 @@ const FinanceDemo = () => {
   <p style={{fontSize:26,color:'#b0bfd3'}}>Biểu đồ minh họa • Không phải dữ liệu thị trường</p>
  </AbsoluteFill>;
 };
-registerRoot(()=><><BirthdayParadoxComposition/><SunkCostComposition/><MovingGoalpostsAnimatedComposition/><MovingGoalpostsComposition/><MontyHallComposition/><SharedOutroComposition/><AiSpendingComposition/><MinimumTrapCalmComposition/><MinimumTrapComposition/><TenDollarsComposition/><FinanceStoryComposition/><Composition id="FinanceDemo" component={FinanceDemo} durationInFrames={120} fps={30} width={1920} height={1080}/></>);
+registerRoot(()=><><InspectionParadoxComposition/><BirthdayParadoxComposition/><SunkCostComposition/><MovingGoalpostsAnimatedComposition/><MovingGoalpostsComposition/><MontyHallComposition/><SharedOutroComposition/><AiSpendingComposition/><MinimumTrapCalmComposition/><MinimumTrapComposition/><TenDollarsComposition/><FinanceStoryComposition/><Composition id="FinanceDemo" component={FinanceDemo} durationInFrames={120} fps={30} width={1920} height={1080}/></>);

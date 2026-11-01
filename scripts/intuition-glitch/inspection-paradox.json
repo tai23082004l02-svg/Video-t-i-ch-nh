@@ -1,0 +1,108 @@
+{
+  "title": "Why You Wait Longer Than You Think — The Inspection Paradox",
+  "model": "Illustrative repeating service: alternating 2-minute and 18-minute gaps. Passenger arrival is uniform in time and independent of the service. No boarding delay; next bus always boards. Ignore finite observation-window edges.",
+  "voice": "am_michael",
+  "speed": 1.03,
+  "lines": [
+    {
+      "scene": "hook",
+      "text": "The buses come every ten minutes, on average. So if you show up at a random time, how long should you wait?"
+    },
+    {
+      "scene": "hook",
+      "text": "Five minutes? That answer feels obvious. And it can be wrong."
+    },
+    {
+      "scene": "regular",
+      "text": "If a bus arrives exactly every ten minutes, you are right."
+    },
+    {
+      "scene": "regular",
+      "text": "Arrive just before a bus, and you barely wait. Arrive just after one, and you wait almost ten minutes."
+    },
+    {
+      "scene": "regular",
+      "text": "For arrivals spread evenly across time, those waits average five minutes."
+    },
+    {
+      "scene": "uneven",
+      "text": "But now keep the same average and change the pattern."
+    },
+    {
+      "scene": "uneven",
+      "text": "One gap is two minutes. The next is eighteen. Then the pattern repeats."
+    },
+    {
+      "scene": "uneven",
+      "text": "Two plus eighteen, divided by two. The average gap is still ten minutes."
+    },
+    {
+      "scene": "sampling",
+      "text": "Here is the trap: you are not choosing a gap at random. You are choosing a moment in time."
+    },
+    {
+      "scene": "sampling",
+      "text": "An eighteen-minute gap gives you nine times as much time to land in it as a two-minute gap."
+    },
+    {
+      "scene": "sampling",
+      "text": "Imagine twenty people arriving, one per minute, halfway through each minute of this cycle."
+    },
+    {
+      "scene": "sampling",
+      "text": "Two land in the short gap. Eighteen land in the long one."
+    },
+    {
+      "scene": "sampling",
+      "text": "Half the gaps are long. But ninety percent of these passengers experience a long gap."
+    },
+    {
+      "scene": "wait",
+      "text": "Inside the short gap, the average wait is one minute."
+    },
+    {
+      "scene": "wait",
+      "text": "Inside the long gap, it is nine minutes."
+    },
+    {
+      "scene": "calculation",
+      "text": "Weight those waits by where people actually arrive: ten percent times one, plus ninety percent times nine."
+    },
+    {
+      "scene": "calculation",
+      "text": "The result is eight point two minutes. Not five. Same average bus gap. A very different average wait."
+    },
+    {
+      "scene": "area",
+      "text": "You can see why on this graph. Right after a bus leaves, your wait for the next one is at its highest."
+    },
+    {
+      "scene": "area",
+      "text": "As the next bus approaches, the remaining wait falls to zero."
+    },
+    {
+      "scene": "area",
+      "text": "A longer gap makes the triangle wider and taller. That adds much more waiting time."
+    },
+    {
+      "scene": "lesson",
+      "text": "This is the inspection paradox. When you inspect a process at a random time, longer intervals are more likely to be the ones you find."
+    },
+    {
+      "scene": "lesson",
+      "text": "It does not mean every bus is late. Our example is a simplified repeating pattern, with passengers arriving independently of the schedule."
+    },
+    {
+      "scene": "lesson",
+      "text": "If you time your arrival using a timetable or a live tracker, that is a different way of sampling."
+    },
+    {
+      "scene": "close",
+      "text": "The lesson is bigger than buses: before trusting an average, ask what is being averaged, and how your experience is selected."
+    },
+    {
+      "scene": "close",
+      "text": "The timetable counts gaps. Your day samples time."
+    }
+  ]
+}

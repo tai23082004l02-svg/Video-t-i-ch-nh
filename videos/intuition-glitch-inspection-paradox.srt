@@ -1,0 +1,131 @@
+1
+00:00:00,200 --> 00:00:07,167
+The buses come every ten minutes, on average. So if you show
+up at a random time, how long should you wait?
+
+2
+00:00:07,333 --> 00:00:11,567
+Five minutes? That answer feels obvious. And it can be wrong.
+
+3
+00:00:11,867 --> 00:00:15,667
+If a bus arrives exactly every ten minutes, you are right.
+
+4
+00:00:15,833 --> 00:00:22,933
+Arrive just before a bus, and you barely wait. Arrive just
+after one, and you wait almost ten minutes.
+
+5
+00:00:23,100 --> 00:00:28,067
+For arrivals spread evenly across time, those waits average
+five minutes.
+
+6
+00:00:28,367 --> 00:00:31,867
+But now keep the same average and change the pattern.
+
+7
+00:00:32,033 --> 00:00:36,800
+One gap is two minutes. The next is eighteen. Then the pattern
+repeats.
+
+8
+00:00:36,967 --> 00:00:42,033
+Two plus eighteen, divided by two. The average gap is still
+ten minutes.
+
+9
+00:00:42,333 --> 00:00:48,367
+Here is the trap: you are not choosing a gap at random. You
+are choosing a moment in time.
+
+10
+00:00:48,533 --> 00:00:54,667
+An eighteen-minute gap gives you nine times as much time to
+land in it as a two-minute gap.
+
+11
+00:00:54,833 --> 00:01:00,733
+Imagine twenty people arriving, one per minute, halfway
+through each minute of this cycle.
+
+12
+00:01:00,900 --> 00:01:04,733
+Two land in the short gap. Eighteen land in the long one.
+
+13
+00:01:04,900 --> 00:01:10,833
+Half the gaps are long. But ninety percent of these passengers
+experience a long gap.
+
+14
+00:01:11,133 --> 00:01:14,733
+Inside the short gap, the average wait is one minute.
+
+15
+00:01:14,900 --> 00:01:17,800
+Inside the long gap, it is nine minutes.
+
+16
+00:01:18,100 --> 00:01:25,433
+Weight those waits by where people actually arrive: ten
+percent times one, plus ninety percent times nine.
+
+17
+00:01:25,600 --> 00:01:32,967
+The result is eight point two minutes. Not five. Same average
+bus gap. A very different average wait.
+
+18
+00:01:33,267 --> 00:01:39,767
+You can see why on this graph. Right after a bus leaves, your
+wait for the next one is at its highest.
+
+19
+00:01:39,933 --> 00:01:44,233
+As the next bus approaches, the remaining wait falls to zero.
+
+20
+00:01:44,400 --> 00:01:50,033
+A longer gap makes the triangle wider and taller. That adds
+much more waiting time.
+
+21
+00:01:50,333 --> 00:01:59,333
+This is the inspection paradox. When you inspect a process at
+a random time, longer intervals are more likely to be the ones
+you find.
+
+22
+00:01:59,500 --> 00:02:08,967
+It does not mean every bus is late. Our example is a
+simplified repeating pattern, with passengers arriving
+independently of the schedule.
+
+23
+00:02:09,133 --> 00:02:15,467
+If you time your arrival using a timetable or a live tracker,
+that is a different way of sampling.
+
+24
+00:02:15,767 --> 00:02:24,000
+The lesson is bigger than buses: before trusting an average,
+ask what is being averaged, and how your experience is
+selected.
+
+25
+00:02:24,167 --> 00:02:27,767
+The timetable counts gaps. Your day samples time.
+
+26
+00:02:27,967 --> 00:02:29,467
+Smarter choices.
+
+27
+00:02:29,767 --> 00:02:31,200
+A better future.
+
+28
+00:02:31,500 --> 00:02:32,933
+Follow for more.
