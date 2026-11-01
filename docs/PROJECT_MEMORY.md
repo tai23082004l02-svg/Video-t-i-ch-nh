@@ -86,7 +86,7 @@ Người dùng đã rút lại các chỉnh sửa theo đề xuất Gemini và n
 | Sunk Cost Trap | `videos/sunk-cost-trap.mp4` | Khoảng 1:39; nhân vật chỉ trong ví dụ rạp phim; đã giao SRT |
 | Outro chung | `videos/shared-outro.mp4` | Đã duyệt dùng lại |
 
-Các bản cũ đã kiểm tra giải mã MP4 và một số khung hình khi dựng; không đồng nghĩa đã kiểm tra UI thực tế trên mọi nền tảng. Chưa có video nào trong danh sách được xuất lại theo yêu cầu vùng an toàn mới nhất.
+Các bản cũ đã kiểm tra giải mã MP4 và một số khung hình khi dựng; không đồng nghĩa đã kiểm tra UI thực tế trên mọi nền tảng. Thử nghiệm vùng an toàn sau đó đã bị người dùng rút lại; kiểu phụ đề Monty Hall là lựa chọn hiện hành.
 
 ## Series đang triển khai
 
@@ -107,3 +107,7 @@ Người dùng yêu cầu nội dung chính căn giữa để bố cục cân đ
 ## Dùng diện tích khung hình theo từng cảnh
 
 Người dùng thấy khung dưới trống và đồng ý: phóng lớn, hạ minh họa vào giữa; tiêu đề gọn; ít thông tin thì hình lớn, nhiều thông tin mới thu nhỏ; bỏ lời giải thích nhỏ lặp lại phụ đề, không thêm trang trí vô nghĩa. Cảnh Birthday Paradox được làm lại thành một mạch: các phân số xuất hiện, tính P(không trùng), ổn định ở49,3% trước câu khẳng định kết quả; phần này thu gọn, phép trừ và50,7% xuất hiện cùng thanh hai màu. Số liệu, phần trăm và dòng người phải khớp số n đang minh họa. Phụ đề Monty Hall và nhịp nối outro nhanh vẫn là lựa chọn hiện tại.
+
+## Mẫu tham chiếu hiện tại đã chốt
+
+Người dùng đã đồng ý bản Birthday Paradox -dynamic-layout và yêu cầu lưu hướng dẫn để các chat sau tiếp tục. Đọc docs/CURRENT_BRIEF.md trước: bản này thay thế các bản thử trước làm mẫu bố cục. Các số đo kích thước ở từng lần chỉnh trước trong tài liệu là lịch sử; giữ nguyên tắc cân giữa và thích ứng theo từng cảnh, không sao chép cứng một scale cho mọi cảnh.

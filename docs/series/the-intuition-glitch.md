@@ -1,5 +1,7 @@
 # The Intuition Glitch
 
+**Mẫu hiện tại đã được người dùng chốt:** `videos/intuition-glitch-birthday-paradox-dynamic-layout.mp4` và `.srt`. Đọc `docs/CURRENT_BRIEF.md` để theo đúng lựa chọn mới nhất. Các biến thể trước ở dưới là lịch sử chỉnh sửa.
+
 Series: Lỗi trực giác — nghịch lý toán và xác suất. Người dùng đã yêu cầu triển khai series, viết kịch bản chuyên nghiệp, câu trước khiến người xem muốn nghe câu sau. Không ép video ngắn hoặc cố định số cảnh.
 
 ## Lối kể đã thống nhất

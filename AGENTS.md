@@ -1,6 +1,6 @@
 # Start here in a new chat
 
-Read `docs/PROJECT_MEMORY.md`, `docs/WORKFLOW.md`, and `templates/VIDEO_STYLE.md` before proposing or making a video. These record the user's decisions; do not infer current preferences from older exported videos.
+Read `docs/CURRENT_BRIEF.md` first, then `docs/PROJECT_MEMORY.md`, `docs/WORKFLOW.md`, and `templates/VIDEO_STYLE.md` before proposing or making a video. These record the user's decisions. The approved visual reference is `videos/intuition-glitch-birthday-paradox-dynamic-layout.mp4`; earlier variants are historical. Do not infer current preferences from them.
 
 - Communicate with the user in Vietnamese. Video narration, on-screen content and captions are English for a US audience.
 - Default voice: Kokoro Michael (`am_michael`, `en-us`). Default font: Liberation Serif, a substitute; do not label it Times New Roman.

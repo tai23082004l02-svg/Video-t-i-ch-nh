@@ -2,7 +2,9 @@
 
 Kho mã và hướng dẫn tiếp tục làm video tài chính, AI, xác suất, tâm lý cho khán giả Mỹ.
 
-**Chat mới bắt đầu từ [AGENTS.md](AGENTS.md), rồi đọc [bộ nhớ dự án](docs/PROJECT_MEMORY.md) và [quy trình dựng](docs/WORKFLOW.md).**
+**Chat mới bắt đầu từ [AGENTS.md](AGENTS.md), rồi đọc [chỉ dẫn hiện tại](docs/CURRENT_BRIEF.md), [bộ nhớ dự án](docs/PROJECT_MEMORY.md) và [quy trình dựng](docs/WORKFLOW.md).**
+
+**Mẫu mới nhất đã chốt:** [Birthday Paradox — dynamic-layout](videos/intuition-glitch-birthday-paradox-dynamic-layout.mp4). Dùng bản này để tham chiếu bố cục; các bản trước là lịch sử chỉnh sửa.
 
 ## Các phần chính
 
@@ -31,7 +33,7 @@ Mở lại video đã có không cần chạy Kokoro. Model AI, trình duyệt, 
 
 Gắn kho mã này ở nhánh **main**, rồi gửi:
 
-> Đọc AGENTS.md, docs/PROJECT_MEMORY.md và docs/WORKFLOW.md trong kho tai23082004l02-svg/Video-t-i-ch-nh trước khi làm video. Giữ các lựa chọn đã chốt; yêu cầu mới của tôi được ưu tiên nếu có thay đổi.
+> Đọc AGENTS.md, docs/CURRENT_BRIEF.md và docs/WORKFLOW.md trong kho tai23082004l02-svg/Video-t-i-ch-nh trước khi làm video. Giữ các lựa chọn đã chốt; yêu cầu mới của tôi được ưu tiên nếu có thay đổi.
 
 GitHub lưu tài liệu và mã nguồn; chat mới vẫn cần được cấp quyền hoặc gắn kho mã để đọc. Đây không phải cơ chế tự đồng bộ trí nhớ giữa mọi cuộc trò chuyện.
 
