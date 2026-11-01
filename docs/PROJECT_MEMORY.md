@@ -94,3 +94,11 @@ Các bản cũ đã kiểm tra giải mã MP4 và một số khung hình khi d�
 ## Series đang triển khai
 
 Người dùng đã bắt đầu The Intuition Glitch (nghịch lý toán/xác suất). Tập mới đầu tiên là Birthday Paradox; xem docs/series/the-intuition-glitch.md. Monty Hall là bản đã làm trước. Giữ kịch bản có sức dẫn, không tự ép ngắn. Birthday Paradox dùng phụ đề ngắn căn từ timing âm vị và bố cục vùng an toàn mới; các video lịch sử phía trên chưa được xuất lại.
+
+## Cập nhật căn phụ đề
+
+Người dùng yêu cầu căn giữa phụ đề. Căn giữa cả hộp và chữ theo chiều ngang khung hình, không đặt lệch trái để chừa UI. Giữ độ cao vùng an toàn; thu hẹp hộp để vẫn tránh nút bên phải. Bản Birthday Paradox điều chỉnh dùng hộp rộng 720px, tâm x540 (x180–900), y1270, chữ 45px.
+
+## Nhịp nối đoạn kết
+
+Người dùng thấy khoảng chờ trước outro quá lâu. Các video mới cần nối liền mạch sau câu cuối, chỉ để khoảng nghỉ ngắn tự nhiên (khoảng 0,2 giây), bỏ phần im lặng đầu outro khi ghép nếu cần. Không cắt mất từ cuối hay thay đổi giọng/nội dung outro đã duyệt. SRT outro phải căn lại theo điểm nối thực tế.

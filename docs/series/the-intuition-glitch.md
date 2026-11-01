@@ -72,3 +72,7 @@ Birthday Paradox là tập đang triển khai, không phải yêu cầu sản xu
 ## Kiểm tra bản giao
 
 Bản MP4 cuối khoảng 138,75 giây (2:19), H.264 1080×1920 30fps và AAC. Render hoàn tất 4162 frame, kiểm tra hình học phụ đề không báo tràn. Đã xem các khung phòng 23 người, công thức và biểu đồ với overlay vùng che giả lập; điểm 97% đã căn lại theo câu phụ đề. Đã giải mã toàn bộ MP4 bằng ffmpeg không lỗi và kiểm tra 66 cue SRT không chồng nhau, tối đa 2 dòng, gồm outro. Chưa xác minh UI trên thiết bị/nền tảng đăng thực tế.
+
+## Điều chỉnh sau phản hồi người dùng
+
+Bản mới: videos/intuition-glitch-birthday-paradox-centered.mp4 và -centered.srt, khoảng 137,24 giây. Hộp phụ đề căn giữa khung hình tại x540, rộng 720px (x180–900), chữ 45px, vẫn ở y1270. Giữ tối đa 2 dòng. Bỏ phần chờ dư sau câu cuối: nội dung kết thúc sau cue lời cuối 6 frame (0,2 giây); khi ghép outro bỏ 9 frame im lặng dẫn đầu. Rút tổng khoảng 1,5 giây. Nội dung và giọng outro không đổi. SRT phải dùng bản -centered để đúng các mốc outro mới. Generator đã cập nhật tạo mốc theo cách ghép mới; SRT lịch sử trong videos/ không tự ghi đè.

@@ -61,10 +61,13 @@ stats=dict(p23=prob(23),p50=prob(50),noMatch23=1-prob(23),pairs23=253)
 (root/'src/birthdayParadoxData.ts').write_text('export const narration = '+json.dumps(lines)+';\nexport const captions = '+json.dumps(captions)+';\nexport const mainDuration = '+str(duration)+';\nexport const stats = '+json.dumps(stats)+';\n')
 # Include the already-approved shared outro in the separately delivered SRT.
 outro=(root/'src/sharedOutroCues.ts').read_text();oc=json.loads(outro.split('export const cues = ')[1].split(';')[0])
-full=captions+[dict(start=c['start']+duration,end=c['end']+duration,text=c['text']) for c in oc]
+content_duration=lines[-1]['end']+6
+outro_skip=9
+full=captions+[dict(start=c['start']+content_duration-outro_skip,end=c['end']+content_duration-outro_skip,text=c['text']) for c in oc]
 def stamp(frame):
  ms=round(frame/30*1000);h,ms=divmod(ms,3600000);m,ms=divmod(ms,60000);s,ms=divmod(ms,1000)
  return f'{h:02}:{m:02}:{s:02},{ms:03}'
 (root/'out/intuition-glitch-birthday-paradox.srt').write_text('\n\n'.join(f'{i}\n{stamp(c["start"])} --> {stamp(c["end"])}\n'+('\n'.join(c['lines']) if 'lines' in c else c['text']) for i,c in enumerate(full,1))+'\n')
+(root/'out/intuition-glitch-birthday-paradox-centered.srt').write_text((root/'out/intuition-glitch-birthday-paradox.srt').read_text())
 (root/'out/intuition-glitch-birthday-paradox-script.md').write_text('# '+spec['title']+'\n\n'+'\n\n'.join(x['text'] for x in lines)+'\n\n## Approved outro\n\nSmarter choices. A better future. Follow for more.\n\n## Mathematical model\n\nIndependent birthdays, equally likely on 365 days; leap day ignored. P(shared) = 1 − ∏(365−k)/365 for k=0..n−1. At n=23: '+str(prob(23))+'. At n=50: '+str(prob(50))+'. Pair count does not make matching-pair events independent.\n')
 print(json.dumps(dict(mainSeconds=duration/30,captionPhrases=len(captions),stats=stats),indent=2))

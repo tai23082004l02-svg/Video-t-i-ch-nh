@@ -19,3 +19,7 @@
 - For 1080x1920, an initial conservative layout is main content x80–900, caption box y1240–1440, with lower ~480px mostly clear. Validate against intended platform/device; this is not a universal platform guarantee.
 - Remove bottom-edge footers. Check critical outro content too. Supply English SRT including outro, but do not rely on plain SRT to control placement.
 - See docs/PROJECT_MEMORY.md for the authoritative, detailed handoff.
+
+- User update: center the subtitle box on the video’s horizontal midpoint, with centered text. Keep its elevated safe-zone height; narrow the box if needed to avoid the right-side UI. Birthday Paradox uses x180–900 (720px wide), centered at x540, y1270, 45px type.
+
+- Keep the transition into the shared outro brisk: use a short natural pause after the final spoken word and skip redundant leading silence. Preserve full words and recalculate SRT outro offsets.

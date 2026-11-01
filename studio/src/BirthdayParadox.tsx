@@ -1,7 +1,10 @@
 import React, {useLayoutEffect} from 'react';
 import {AbsoluteFill,Audio,Composition,Sequence,interpolate,staticFile,useCurrentFrame} from 'remotion';
-import {narration,captions,mainDuration,stats} from './birthdayParadoxData';
+import {narration,captions,stats} from './birthdayParadoxData';
 import {SharedOutro,SHARED_OUTRO_DURATION} from './SharedOutro';
+const CONTENT_DURATION=narration[narration.length-1].end+6;
+const OUTRO_SKIP=9;
+const ENDING_DURATION=SHARED_OUTRO_DURATION-OUTRO_SKIP;
 const cream='#f8f0df',mint='#b9dfb4',peach='#e6b398',muted='#b6c7ba',ink='#20392e';
 const r=(f:number,a:number,b:number)=>interpolate(f,[a,b],[0,1],{extrapolateLeft:'clamp',extrapolateRight:'clamp'});
 const chance=(n:number)=>{let p=1;for(let i=0;i<n;i++)p*=(365-i)/365;return 1-p};
@@ -57,12 +60,17 @@ const Main=()=>{
  useLayoutEffect(()=>{
   const box=document.querySelector('[data-birthday-caption]');
   if(!box)return;
-  const b=box.getBoundingClientRect();
+  const root=document.querySelector('[data-birthday-frame]')!.getBoundingClientRect();
+  // Remotion first mounts compositions offscreen with zero width for metadata.
+  if(root.width<1)return;
+  const scale=root.width/1080;
+  const normalize=(v:DOMRect)=>({left:(v.left-root.left)/scale,right:(v.right-root.left)/scale,bottom:(v.bottom-root.top)/scale,height:v.height/scale});
+  const b=normalize(box.getBoundingClientRect());
   const range=document.createRange();range.selectNodeContents(box);
-  const text=range.getBoundingClientRect();
-  if(b.right>901||b.bottom>1440||text.right>b.right-20||text.height>116)throw new Error('Birthday caption exceeds the approved two-line safe layout at frame '+f);
+  const text=normalize(range.getBoundingClientRect());
+  if(Math.abs((b.left+b.right)/2-540)>1||b.right>901||b.bottom>1440||text.right>b.right-20||text.height>116)throw new Error('Birthday caption layout check at frame '+f+' '+JSON.stringify({b,text,scale,root:{left:root.left,top:root.top,width:root.width}}));
  },[f]);
- return <AbsoluteFill style={{background:'#1c302b',color:cream,fontFamily:'Liberation Serif, serif',overflow:'hidden'}}><Audio src={staticFile('audio/birthday-paradox-michael.wav')}/><AbsoluteFill style={{background:'radial-gradient(ellipse at 65% 35%,#b9dfb410,transparent 70%)'}}/><div style={{position:'absolute',left:80,top:180,color:muted,fontSize:23,letterSpacing:3.8}}>THE INTUITION GLITCH</div><div style={{position:'absolute',left:80,top:245,width:810}}><div style={{fontSize:21,letterSpacing:2.5,color:peach,marginBottom:20}}>{label}</div><div style={{fontSize:66,fontWeight:700,lineHeight:1.12}}>{title}</div></div><div style={{position:'absolute',left:80,top:440,width:800,height:740,opacity:r(t,0,14),transform:`translateY(${(1-r(t,0,14))*10}px)`}}>{body}</div>{cap?<div data-birthday-caption style={{position:'absolute',left:80,top:1270,width:810,minHeight:142,padding:'20px 26px',boxSizing:'border-box',display:'flex',alignItems:'center',justifyContent:'center',borderRadius:20,background:'#08130fe8',border:'1px solid #82997966',fontSize:47,lineHeight:1.2,fontWeight:700,textAlign:'center',whiteSpace:'pre-line'}}>{cap.lines.join('\n')}</div>:null}</AbsoluteFill>;
+ return <AbsoluteFill data-birthday-frame style={{background:'#1c302b',color:cream,fontFamily:'Liberation Serif, serif',overflow:'hidden'}}><Audio src={staticFile('audio/birthday-paradox-michael.wav')}/><AbsoluteFill style={{background:'radial-gradient(ellipse at 65% 35%,#b9dfb410,transparent 70%)'}}/><div style={{position:'absolute',left:80,top:180,color:muted,fontSize:23,letterSpacing:3.8}}>THE INTUITION GLITCH</div><div style={{position:'absolute',left:80,top:245,width:810}}><div style={{fontSize:21,letterSpacing:2.5,color:peach,marginBottom:20}}>{label}</div><div style={{fontSize:66,fontWeight:700,lineHeight:1.12}}>{title}</div></div><div style={{position:'absolute',left:80,top:440,width:800,height:740,opacity:r(t,0,14),transform:`translateY(${(1-r(t,0,14))*10}px)`}}>{body}</div>{cap?<div data-birthday-caption style={{position:'absolute',left:'50%',transform:'translateX(-50%)',top:1270,width:720,minHeight:142,padding:'20px 23px',boxSizing:'border-box',display:'flex',alignItems:'center',justifyContent:'center',borderRadius:20,background:'#08130fe8',border:'1px solid #82997966',fontSize:45,lineHeight:1.2,fontWeight:700,textAlign:'center',whiteSpace:'pre-line'}}>{cap.lines.join('\n')}</div>:null}</AbsoluteFill>;
 };
-const BirthdayParadox=({uiOverlay=false}:{uiOverlay?:boolean})=><AbsoluteFill style={{background:'#162c2b'}}><Sequence durationInFrames={mainDuration}><Main/></Sequence><Sequence from={mainDuration} durationInFrames={SHARED_OUTRO_DURATION}><AbsoluteFill style={{background:'#162c2b'}}><AbsoluteFill style={{transform:'translateX(-35px) scale(.94)'}}><SharedOutro/></AbsoluteFill></AbsoluteFill></Sequence>{uiOverlay?<AbsoluteFill style={{pointerEvents:'none'}}><div style={{position:'absolute',left:900,top:0,width:180,height:1920,background:'#ff405040',borderLeft:'2px dashed #ff9898'}}/><div style={{position:'absolute',left:0,top:1440,width:1080,height:480,background:'#ff405040',borderTop:'2px dashed #ff9898'}}/><div style={{position:'absolute',left:0,top:0,width:1080,height:150,background:'#ff405025'}}/><div style={{position:'absolute',left:80,top:1240,width:810,height:200,border:'2px dashed #b9dfb4'}}/></AbsoluteFill>:null}</AbsoluteFill>;
-export const BirthdayParadoxComposition=()=> <Composition id="BirthdayParadox" component={BirthdayParadox} durationInFrames={mainDuration+SHARED_OUTRO_DURATION} width={1080} height={1920} fps={30}/>;
+const BirthdayParadox=({uiOverlay=false}:{uiOverlay?:boolean})=><AbsoluteFill style={{background:'#162c2b'}}><Sequence durationInFrames={CONTENT_DURATION}><Main/></Sequence><Sequence from={CONTENT_DURATION} durationInFrames={ENDING_DURATION}><AbsoluteFill style={{background:'#162c2b'}}><AbsoluteFill style={{transform:'translateX(-35px) scale(.94)'}}><Sequence from={-OUTRO_SKIP}><SharedOutro/></Sequence></AbsoluteFill></AbsoluteFill></Sequence>{uiOverlay?<AbsoluteFill style={{pointerEvents:'none'}}><div style={{position:'absolute',left:900,top:0,width:180,height:1920,background:'#ff405040',borderLeft:'2px dashed #ff9898'}}/><div style={{position:'absolute',left:0,top:1440,width:1080,height:480,background:'#ff405040',borderTop:'2px dashed #ff9898'}}/><div style={{position:'absolute',left:0,top:0,width:1080,height:150,background:'#ff405025'}}/><div style={{position:'absolute',left:180,top:1240,width:720,height:200,border:'2px dashed #b9dfb4'}}/></AbsoluteFill>:null}</AbsoluteFill>;
+export const BirthdayParadoxComposition=()=> <Composition id="BirthdayParadox" component={BirthdayParadox} durationInFrames={CONTENT_DURATION+ENDING_DURATION} width={1080} height={1920} fps={30}/>;
