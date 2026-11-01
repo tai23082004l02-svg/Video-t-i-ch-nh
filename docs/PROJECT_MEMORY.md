@@ -103,3 +103,7 @@ Người dùng thấy khoảng chờ trước outro quá lâu. Các video mới 
 ## Căn giữa nội dung chính
 
 Người dùng yêu cầu nội dung chính căn giữa để bố cục cân đối. Căn giữa nhãn series, dòng giới thiệu, tiêu đề, khối minh họa và phần giải thích theo trục ngang khung hình. Không để cả khối lệch trái như bản thử vùng an toàn. Với Birthday Paradox: khối minh họa rộng 800px có tâm x540 (left140); tiêu đề rộng810px có tâm x540 (left135); text-align center. Nhãn trục/sơ đồ vẫn theo cấu trúc dễ đọc. Phụ đề tiếp tục đúng kiểu Monty Hall; đoạn nối outro nhanh giữ nguyên.
+
+## Dùng diện tích khung hình theo từng cảnh
+
+Người dùng thấy khung dưới trống và đồng ý: phóng lớn, hạ minh họa vào giữa; tiêu đề gọn; ít thông tin thì hình lớn, nhiều thông tin mới thu nhỏ; bỏ lời giải thích nhỏ lặp lại phụ đề, không thêm trang trí vô nghĩa. Cảnh Birthday Paradox được làm lại thành một mạch: các phân số xuất hiện, tính P(không trùng), ổn định ở49,3% trước câu khẳng định kết quả; phần này thu gọn, phép trừ và50,7% xuất hiện cùng thanh hai màu. Số liệu, phần trăm và dòng người phải khớp số n đang minh họa. Phụ đề Monty Hall và nhịp nối outro nhanh vẫn là lựa chọn hiện tại.

@@ -23,3 +23,9 @@
 ## Main content alignment
 
 - Center the main title, series label, kicker, illustration and explanatory blocks horizontally on the video frame so the composition feels balanced. Center the block and its text; do not retain the old left offset used by the UI-safe-area experiment. Keep internal chart labels and structured diagrams aligned for readability. Preserve the Monty Hall subtitle style.
+
+## Use the frame according to the scene
+
+- Avoid pushing all content into the top half and leaving a large empty gap before captions. Scale and place each scene individually: fewer elements can be larger; denser scenes need more room.
+- Keep meaningful illustrations central and lower them when needed. Remove small explanations that only repeat the narration/captions. Do not add arbitrary decoration to fill gaps.
+- Let a calculation develop within one shot: factors appear, assemble into the result, then the complementary probability is revealed through the same bar/diagram. Keep mathematical values synchronized with the spoken claim.

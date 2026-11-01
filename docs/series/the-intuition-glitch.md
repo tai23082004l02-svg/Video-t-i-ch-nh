@@ -84,3 +84,7 @@ Người dùng yêu cầu khôi phục đúng phụ đề video Monty Hall, khô
 ## Cập nhật cân giữa nội dung chính
 
 Theo yêu cầu tiếp theo, bản `intuition-glitch-birthday-paradox-balanced.mp4` căn giữa toàn bộ nhãn series, dòng giới thiệu, tiêu đề, khối minh họa và phần giải thích theo trục ngang x540. Tiêu đề rộng810px; khối minh họa rộng800px. Các nhãn trục bên trong biểu đồ giữ cách căn dễ đọc. Phụ đề vẫn đúng kiểu Monty Hall, timeline/audio và nhịp nối outro không đổi so với bản -monty-captions; SRT tương ứng có nội dung/thời gian giống nhau.
+
+## Bố cục linh hoạt, ít khoảng trống
+
+Bản mới `videos/intuition-glitch-birthday-paradox-dynamic-layout.mp4` làm lớn và hạ minh họa theo từng cảnh, gọn phần tiêu đề, bỏ vài chú thích lặp lời đọc. Cảnh product/reveal dùng chung ProbabilityBreakdown, không reset/fade cả cảnh khi chuyển ý: phân số đang nhân khớp số người n; kết quả49,3% sẵn sàng trước câu khẳng định; sau đó phép trừ,50,7% và thanh xác suất mở ra. Kết quả phụ và chính đều cân giữa. Lịch, căn phòng, mạng lưới, biểu đồ và phần chốt có kích thước thích ứng; cảnh nhiều chữ được kiểm tra riêng. Audio, thời lượng, phụ đề Monty Hall và mốc outro như bản -balanced; SRT giống nhau.

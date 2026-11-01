@@ -1,0 +1,152 @@
+1
+00:00:00,300 --> 00:00:06,500
+How many strangers would you need in a room before a shared
+birthday becomes more likely than not?
+
+2
+00:00:07,033 --> 00:00:09,067
+A hundred? Two hundred?
+
+3
+00:00:09,867 --> 00:00:11,300
+Try twenty-three.
+
+4
+00:00:11,967 --> 00:00:14,967
+If that feels wrong, hold on to that feeling.
+
+5
+00:00:15,267 --> 00:00:18,733
+It points to the exact mistake this puzzle exposes.
+
+6
+00:00:19,033 --> 00:00:22,500
+You may be imagining someone matching your birthday.
+
+7
+00:00:22,800 --> 00:00:24,867
+But nobody has to match you.
+
+8
+00:00:25,367 --> 00:00:27,267
+Any two people can match.
+
+9
+00:00:27,567 --> 00:00:32,167
+And every person who enters creates more chances than the
+one before.
+
+10
+00:00:32,467 --> 00:00:35,533
+The second person creates one possible pair.
+
+11
+00:00:35,833 --> 00:00:37,667
+The third adds two more.
+
+12
+00:00:37,967 --> 00:00:43,533
+By the time twenty-three people are standing here, there are
+253 pairs.
+
+13
+00:00:43,833 --> 00:00:49,067
+You were looking at a small crowd. The probability was
+looking at a much bigger network.
+
+14
+00:00:49,367 --> 00:00:53,700
+But counting pairs is only the clue. Here is the
+calculation.
+
+15
+00:00:54,000 --> 00:00:56,633
+Instead of asking when birthdays collide,
+
+16
+00:00:56,733 --> 00:01:00,067
+ask what it takes for every birthday to be different.
+
+17
+00:01:00,367 --> 00:01:02,933
+The first person can have any birthday.
+
+18
+00:01:03,233 --> 00:01:06,200
+The second must avoid one occupied date.
+
+19
+00:01:06,500 --> 00:01:11,533
+That leaves 364 out of 365 days.
+
+20
+00:01:11,833 --> 00:01:16,167
+If both birthdays are different, the third must avoid two
+dates.
+
+21
+00:01:16,467 --> 00:01:19,633
+Now 363 days remain.
+
+22
+00:01:19,933 --> 00:01:23,367
+Keep multiplying those chances as people enter.
+
+23
+00:01:23,667 --> 00:01:30,633
+At twenty-three people, the chance that every birthday is
+different is about 49.3%.
+
+24
+00:01:30,933 --> 00:01:33,767
+So at least one shared birthday is the rest:
+
+25
+00:01:33,900 --> 00:01:36,267
+about 50.7%.
+
+26
+00:01:36,933 --> 00:01:41,033
+For this classic calculation, assume independent birthdays,
+
+27
+00:01:41,133 --> 00:01:46,200
+equally likely across 365 days. Ignore leap day.
+
+28
+00:01:46,500 --> 00:01:49,900
+That does not promise a match in this particular room.
+
+29
+00:01:50,200 --> 00:01:54,733
+It means that across many such rooms, just over half would
+have one.
+
+30
+00:01:55,033 --> 00:01:59,200
+And with fifty people, the chance exceeds 97%.
+
+31
+00:01:59,500 --> 00:02:03,133
+The surprise was never how many birthdays fit in a year.
+
+32
+00:02:03,433 --> 00:02:06,300
+It was how many comparisons fit in a room.
+
+33
+00:02:06,600 --> 00:02:10,967
+Your intuition counted people. The probability counted
+pairs.
+
+34
+00:02:11,167 --> 00:02:12,667
+Smarter choices.
+
+35
+00:02:12,967 --> 00:02:14,400
+A better future.
+
+36
+00:02:14,700 --> 00:02:16,133
+Follow for more.
