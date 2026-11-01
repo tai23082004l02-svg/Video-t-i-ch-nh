@@ -7,6 +7,7 @@ Read `docs/PROJECT_MEMORY.md`, `docs/WORKFLOW.md`, and `templates/VIDEO_STYLE.md
 - Let the story determine runtime and scene count. Use compelling, accurate scripts; do not invent statistics or promise an intelligence ranking.
 - Select visuals passage by passage. Characters are for interactions or concrete situations, not a mandatory cast throughout a video. Mix objects, metaphors, diagrams and short text when useful. Avoid static slides and chaotic rapid transitions.
 - No scene counters. Latest subtitle preference: use the original Monty Hall style (full sentence, centered white 37px bold text, dark box near bottom). The user withdrew the Gemini-inspired high/narrow safe-zone caption experiment; do not apply it unless requested again. See PROJECT_MEMORY. Do not add a footer unless requested.
+- Center the main content (series label, title, illustration and explanatory blocks) horizontally on the frame for a balanced composition; preserve internal diagram readability.
 - Append the approved shared outro: “Smarter choices. A better future. Follow for more.” See `studio/src/SharedOutro.tsx`.
 - Use the checked-out repository and `studio/`, not hard-coded old `/workspace/remotion-studio` paths. Do not create worktrees unless the user asks. Runtime processes and dependencies may need restarting/reinstalling.
 - Keep scripts, cues, source, required assets and English SRT with each new production. Validate output before delivery. The user needs GitHub download links; workspace links did not work.

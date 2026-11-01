@@ -19,3 +19,7 @@
 - The user explicitly withdrew the Gemini-inspired high-position, narrow-box, short-phrase experiment. Do not reapply it or warn about it unprompted.
 - Use the user's latest choice if they change subtitle layout again. Do not add scene counters or an extra footer.
 - Keep the transition into the shared outro brisk: around 0.2s after the final spoken line, skip redundant leading silence, preserve full words, and recalculate SRT offsets.
+
+## Main content alignment
+
+- Center the main title, series label, kicker, illustration and explanatory blocks horizontally on the video frame so the composition feels balanced. Center the block and its text; do not retain the old left offset used by the UI-safe-area experiment. Keep internal chart labels and structured diagrams aligned for readability. Preserve the Monty Hall subtitle style.

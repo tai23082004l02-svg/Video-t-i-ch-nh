@@ -80,3 +80,7 @@ Bản mới: videos/intuition-glitch-birthday-paradox-centered.mp4 và -centered
 ## Lựa chọn phụ đề cuối cùng sau thử nghiệm
 
 Người dùng yêu cầu khôi phục đúng phụ đề video Monty Hall, không dùng thay đổi theo Gemini. Bản hiện tại: `videos/intuition-glitch-birthday-paradox-monty-captions.mp4` và `.srt`. Hộp đen phía dưới, left/right 50px, bottom 150px, chữ trắng đậm 37px, theo câu; 33 câu phần chính + 3 cue outro. Giữ đoạn nghỉ trước outro khoảng 0,2 giây và bỏ 9 frame im lặng đầu outro, thời lượng vẫn khoảng 137,24 giây. Các ghi chú safe-zone/căn giữa hộp hẹp phía trên là lịch sử đã rút lại.
+
+## Cập nhật cân giữa nội dung chính
+
+Theo yêu cầu tiếp theo, bản `intuition-glitch-birthday-paradox-balanced.mp4` căn giữa toàn bộ nhãn series, dòng giới thiệu, tiêu đề, khối minh họa và phần giải thích theo trục ngang x540. Tiêu đề rộng810px; khối minh họa rộng800px. Các nhãn trục bên trong biểu đồ giữ cách căn dễ đọc. Phụ đề vẫn đúng kiểu Monty Hall, timeline/audio và nhịp nối outro không đổi so với bản -monty-captions; SRT tương ứng có nội dung/thời gian giống nhau.

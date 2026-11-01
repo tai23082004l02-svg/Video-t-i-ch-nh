@@ -99,3 +99,7 @@ Người dùng đã bắt đầu The Intuition Glitch (nghịch lý toán/xác s
 ## Nhịp nối đoạn kết
 
 Người dùng thấy khoảng chờ trước outro quá lâu. Các video mới cần nối liền mạch sau câu cuối, chỉ để khoảng nghỉ ngắn tự nhiên (khoảng 0,2 giây), bỏ phần im lặng đầu outro khi ghép nếu cần. Không cắt mất từ cuối hay thay đổi giọng/nội dung outro đã duyệt. SRT outro phải căn lại theo điểm nối thực tế.
+
+## Căn giữa nội dung chính
+
+Người dùng yêu cầu nội dung chính căn giữa để bố cục cân đối. Căn giữa nhãn series, dòng giới thiệu, tiêu đề, khối minh họa và phần giải thích theo trục ngang khung hình. Không để cả khối lệch trái như bản thử vùng an toàn. Với Birthday Paradox: khối minh họa rộng 800px có tâm x540 (left140); tiêu đề rộng810px có tâm x540 (left135); text-align center. Nhãn trục/sơ đồ vẫn theo cấu trúc dễ đọc. Phụ đề tiếp tục đúng kiểu Monty Hall; đoạn nối outro nhanh giữ nguyên.
