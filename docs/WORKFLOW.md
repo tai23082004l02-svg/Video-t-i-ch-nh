@@ -57,12 +57,12 @@ Kokoro runtime MIT; model Kokoro-82M Apache-2.0. Nguồn:
 2. Lập kế hoạch minh họa cho từng đoạn. Nhân vật cho tình huống/hội thoại; đồ vật, ẩn dụ và sơ đồ cho giải thích; chữ ngắn cho câu chốt. Không cố giữ cùng hai nhân vật xuyên suốt.
 3. Tạo giọng Michael theo các đoạn ngắn. Đo số mẫu thật để tạo start/end frame, thêm khoảng dừng có chủ đích. Chọn mức song song vừa phải, model hiện dùng 2 thread CPU.
 4. Lưu WAV trong studio/public/audio, cue trong studio/src. Thời lượng chính lấy từ audio, không đoán.
-5. Chia phụ đề thành cụm dễ đọc 1–2 dòng. Căn lại các cụm theo âm thanh; nếu chỉ phân bổ thời gian ước lượng phải nghe/kiểm tra. Không nhồi nguyên câu dài. Áp dụng vùng an toàn trong PROJECT_MEMORY.
+5. Theo lựa chọn mới nhất, dùng phụ đề theo câu và bố cục đúng kiểu Monty Hall. Căn mốc theo audio. Không tự áp lại thử nghiệm hộp hẹp/đặt cao theo Gemini đã bị người dùng rút lại; đọc PROJECT_MEMORY trước.
 6. Dựng composition mới và đăng ký trong studio/src/index.tsx. Không sửa lại video cũ nếu chưa được yêu cầu. Dùng tương tác/hành động có ý nghĩa, chuyển cảnh nhẹ khi cần.
 7. Nối SharedOutro vào cuối bằng Sequence/Series, tăng thời lượng Composition thêm SHARED_OUTRO_DURATION. Tránh để audio chính và outro chồng lời. Giữ nội dung quan trọng trong vùng an toàn, kể cả lời kêu gọi ở outro.
 8. Xuất SRT riêng gồm toàn bộ phần chính và outro. Lưu kịch bản MD cùng tên video.
 
-Các nguồn đã lưu là bản lịch sử, vẫn có phụ đề thấp và footer sát đáy. Không dùng các tọa độ cũ làm mẫu cho video mới. Không cần sửa ngược các video cũ trong task chỉ làm video mới.
+Monty Hall hiện là mẫu phụ đề được người dùng chỉ định: left/right 50px, bottom 150px, font 37px, hộp tối, theo câu. Chỉ sao phần phụ đề; không tự thêm chân trang hoặc chỉ số cảnh. Không cần sửa lại các video cũ khác nếu chưa được yêu cầu.
 
 ## 5. Xuất và xác minh
 
@@ -77,7 +77,7 @@ ffmpeg -v error -i out/shared-outro-check.mp4 -f null -
 
 - Kiểm tra render kết thúc thành công, đủ frame, có H.264 và AAC khi dùng audio.
 - Xem các khung hình đại diện, đặc biệt câu dài, biểu đồ, vật thể được trao và chuyển sang outro.
-- Kiểm tra bố cục với vùng che UI dưới/phải; không tuyên bố an toàn mọi nền tảng chỉ từ một ảnh sạch.
+- Kiểm tra phụ đề hiển thị đầy đủ và đúng mẫu người dùng đã chọn. Người dùng đã rút lại thử nghiệm safe-zone theo Gemini; không tự thay đổi vị trí sang bố cục đó.
 - Kiểm tra phát âm tên, số, pause và độ khớp phụ đề. Không mô tả “đã nghe” nếu chỉ kiểm tra metadata/biên độ.
 - Không cần chạy lại mọi video cũ khi thêm một video mới. Render vẫn phải bundle được tất cả import trong entrypoint.
 

@@ -12,14 +12,10 @@
 - Deliver video downloads through GitHub links; workspace download links did not work for the user.
 - Choose the visual form separately for each passage: use characters only for necessary interactions or concrete situations; use objects, metaphors, charts, diagrams, or short text for other passages. Do not carry the same two characters through an entire video by default.
 
-## Latest caption/UI requirements
+## Current subtitle style — latest user decision
 
-- Historical exports have low, long captions and footers. Do not copy those placements for new videos.
-- New captions should be short, usually 1–2 lines, around 65–75% of frame height as a starting point; reserve bottom and right UI space and reflow illustrations accordingly.
-- For 1080x1920, an initial conservative layout is main content x80–900, caption box y1240–1440, with lower ~480px mostly clear. Validate against intended platform/device; this is not a universal platform guarantee.
-- Remove bottom-edge footers. Check critical outro content too. Supply English SRT including outro, but do not rely on plain SRT to control placement.
-- See docs/PROJECT_MEMORY.md for the authoritative, detailed handoff.
-
-- User update: center the subtitle box on the video’s horizontal midpoint, with centered text. Keep its elevated safe-zone height; narrow the box if needed to avoid the right-side UI. Birthday Paradox uses x180–900 (720px wide), centered at x540, y1270, 45px type.
-
-- Keep the transition into the shared outro brisk: use a short natural pause after the final spoken word and skip redundant leading silence. Preserve full words and recalculate SRT outro offsets.
+- Use the subtitle style from `studio/src/MontyHall.tsx`: full sentence, white centered bold Liberation Serif, 37px, line-height 1.4, dark box.
+- At 1080x1920: left/right 50px, bottom 150px, padding 27px 32px, minimum height 135px, radius 20px, background #091113eb, border 1px solid #778f7755.
+- The user explicitly withdrew the Gemini-inspired high-position, narrow-box, short-phrase experiment. Do not reapply it or warn about it unprompted.
+- Use the user's latest choice if they change subtitle layout again. Do not add scene counters or an extra footer.
+- Keep the transition into the shared outro brisk: around 0.2s after the final spoken line, skip redundant leading silence, preserve full words, and recalculate SRT offsets.

@@ -37,8 +37,8 @@ GitHub lưu tài liệu và mã nguồn; chat mới vẫn cần được cấp q
 
 ## Lưu ý về các video cũ
 
-Các bản đã giao được giữ nguyên, kể cả bản thử. Phụ đề của chúng còn thấp và dài theo bố cục cũ. Quy tắc vùng an toàn và phụ đề ngắn trong tài liệu áp dụng cho video mới; không coi bố cục cũ là mẫu mặc định.
+Các bản đã giao được giữ nguyên, kể cả bản thử. Người dùng hiện đã chọn quay lại phụ đề đúng kiểu Monty Hall; thử nghiệm safe-zone/phụ đề cụm ngắn theo Gemini đã rút lại. Đọc PROJECT_MEMORY để dùng lựa chọn mới nhất.
 
 ## Series The Intuition Glitch
 
-Xem [kế hoạch và ghi chú tập Birthday Paradox](docs/series/the-intuition-glitch.md). Composition mới dùng phụ đề ngắn và vùng an toàn mới; không sao chép tọa độ phụ đề từ các bản lịch sử.
+Xem [kế hoạch và ghi chú tập Birthday Paradox](docs/series/the-intuition-glitch.md). Lựa chọn phụ đề mới nhất là đúng kiểu Monty Hall, theo câu ở phía dưới; các bản phụ đề ngắn/vùng an toàn là lịch sử thử nghiệm.

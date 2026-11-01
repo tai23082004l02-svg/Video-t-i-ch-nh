@@ -76,3 +76,7 @@ Bản MP4 cuối khoảng 138,75 giây (2:19), H.264 1080×1920 30fps và AAC. R
 ## Điều chỉnh sau phản hồi người dùng
 
 Bản mới: videos/intuition-glitch-birthday-paradox-centered.mp4 và -centered.srt, khoảng 137,24 giây. Hộp phụ đề căn giữa khung hình tại x540, rộng 720px (x180–900), chữ 45px, vẫn ở y1270. Giữ tối đa 2 dòng. Bỏ phần chờ dư sau câu cuối: nội dung kết thúc sau cue lời cuối 6 frame (0,2 giây); khi ghép outro bỏ 9 frame im lặng dẫn đầu. Rút tổng khoảng 1,5 giây. Nội dung và giọng outro không đổi. SRT phải dùng bản -centered để đúng các mốc outro mới. Generator đã cập nhật tạo mốc theo cách ghép mới; SRT lịch sử trong videos/ không tự ghi đè.
+
+## Lựa chọn phụ đề cuối cùng sau thử nghiệm
+
+Người dùng yêu cầu khôi phục đúng phụ đề video Monty Hall, không dùng thay đổi theo Gemini. Bản hiện tại: `videos/intuition-glitch-birthday-paradox-monty-captions.mp4` và `.srt`. Hộp đen phía dưới, left/right 50px, bottom 150px, chữ trắng đậm 37px, theo câu; 33 câu phần chính + 3 cue outro. Giữ đoạn nghỉ trước outro khoảng 0,2 giây và bỏ 9 frame im lặng đầu outro, thời lượng vẫn khoảng 137,24 giây. Các ghi chú safe-zone/căn giữa hộp hẹp phía trên là lịch sử đã rút lại.

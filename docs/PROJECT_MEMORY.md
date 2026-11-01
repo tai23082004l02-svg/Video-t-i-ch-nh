@@ -45,19 +45,16 @@ Cập nhật ngày 2026-11-01. Đây là các quyết định trong cuộc trò 
 - Giữ bối cảnh đủ lâu, dẫn mắt bằng một hành động chính tại một thời điểm. Dùng cắt gọn hoặc chuyển nhẹ khi ý thay đổi.
 - **Không hiển thị chỉ số cảnh** như 1/4, 2/4 hay 01/12. Đây là yêu cầu rõ của người dùng.
 
-## Phụ đề và vùng an toàn — yêu cầu mới nhất
+## Phụ đề — quyết định mới nhất: quay lại Monty Hall
 
-Các video cũ đặt phụ đề quá thấp, dài và có dòng chân trang sát đáy. Người dùng yêu cầu chú ý sửa **từ video sau**, không yêu cầu xuất lại toàn bộ video cũ.
+Người dùng đã rút lại các chỉnh sửa theo đề xuất Gemini và nói rõ: **“Như cái video Monty Hall ấy.”** Đây là lựa chọn hiện tại, thay thế thử nghiệm phụ đề ngắn đặt cao và hộp hẹp căn giữa.
 
-- Phụ đề phải tránh giao diện Shorts/TikTok/Reels phía dưới và các nút tương tác bên phải.
-- Dùng cụm ngắn, thường 1–2 dòng; không để nguyên câu dài chiếm 3–4 dòng. Giữ khớp audio và đủ thời gian đọc.
-- Đặt phụ đề khoảng 65–75% chiều cao làm điểm khởi đầu. Với khung 1080×1920, ví dụ làm việc thận trọng: nội dung chính x≈80–900, phụ đề trong y≈1240–1440, mép phải khoảng x≤900, để phần dưới khoảng 480px tương đối trống.
-- Đây là **bố cục khởi đầu để kiểm tra**, không phải vùng an toàn cố định hoặc bảo đảm của mọi nền tảng. UI thay đổi theo thiết bị, tiêu đề và chế độ xem.
-- Phải bố trí lại hình minh họa để không đụng phụ đề; không chỉ kéo hộp chữ lên giữa nội dung.
-- Bỏ dòng chân trang sát đáy ở video mới. Không đặt lời kêu gọi quan trọng vào phần mép dưới/phải dễ bị che.
-- Kiểm tra khung hình có overlay UI thử khi làm video mới; xác nhận trong bản xem trước của nền tảng nếu có điều kiện.
-- Cung cấp SRT tiếng Anh riêng, gồm cả outro. SRT thuần không bảo đảm vị trí/font hiển thị trong ứng dụng phát.
-- **Nguồn cũ trong `studio/src` vẫn giữ bố cục cũ. Đừng sao chép vị trí phụ đề hoặc footer đó sang video mới.**
+- Dùng đúng kiểu `studio/src/MontyHall.tsx`: hiển thị theo câu, chữ trắng đậm căn giữa, font Liberation Serif 37px, line-height 1.4.
+- Hộp tối màu, left/right 50px, bottom 150px, padding 27px 32px, min-height 135px, border-radius 20px, background #091113eb, border 1px solid #778f7755 cho khung 1080×1920.
+- Không tự đẩy phụ đề lên 65–75% chiều cao, thu hẹp hộp, hoặc ép thành cụm ngắn theo thử nghiệm trước. Không nhắc lại cảnh báo UI khi người dùng đã chọn cách này.
+- Chỉ điều chỉnh lại nếu người dùng yêu cầu. Không tự thêm chỉ số cảnh hay chân trang.
+- Vẫn cung cấp SRT theo audio, có cả outro. SRT thuần không bảo đảm font/vị trí hiển thị trong mọi ứng dụng.
+- Bản Birthday Paradox mới dùng `videos/intuition-glitch-birthday-paradox-monty-captions.mp4` và `.srt`.
 
 ## Đoạn kết chung đã duyệt
 
@@ -93,11 +90,11 @@ Các bản cũ đã kiểm tra giải mã MP4 và một số khung hình khi d�
 
 ## Series đang triển khai
 
-Người dùng đã bắt đầu The Intuition Glitch (nghịch lý toán/xác suất). Tập mới đầu tiên là Birthday Paradox; xem docs/series/the-intuition-glitch.md. Monty Hall là bản đã làm trước. Giữ kịch bản có sức dẫn, không tự ép ngắn. Birthday Paradox dùng phụ đề ngắn căn từ timing âm vị và bố cục vùng an toàn mới; các video lịch sử phía trên chưa được xuất lại.
+Người dùng đã bắt đầu The Intuition Glitch (nghịch lý toán/xác suất). Tập mới đầu tiên là Birthday Paradox; xem docs/series/the-intuition-glitch.md. Monty Hall là bản đã làm trước. Giữ kịch bản có sức dẫn, không tự ép ngắn. Birthday Paradox đã thử phụ đề cụm ngắn/vùng an toàn, nhưng lựa chọn cuối của người dùng là quay lại kiểu phụ đề Monty Hall. Giữ dữ liệu timing âm vị trong nguồn để tham khảo; hiển thị và SRT của bản mới theo câu.
 
-## Cập nhật căn phụ đề
+## Lịch sử thử nghiệm phụ đề
 
-Người dùng yêu cầu căn giữa phụ đề. Căn giữa cả hộp và chữ theo chiều ngang khung hình, không đặt lệch trái để chừa UI. Giữ độ cao vùng an toàn; thu hẹp hộp để vẫn tránh nút bên phải. Bản Birthday Paradox điều chỉnh dùng hộp rộng 720px, tâm x540 (x180–900), y1270, chữ 45px.
+Đã thử đặt cao hơn để tránh UI, rồi hộp hẹp căn giữa. Người dùng không chọn hai bản đó và yêu cầu khôi phục đúng kiểu Monty Hall. Các bản lịch sử giữ để so sánh, không phải mặc định hiện tại.
 
 ## Nhịp nối đoạn kết
 
