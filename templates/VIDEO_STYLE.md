@@ -10,3 +10,4 @@
 - Do not show scene counters such as 1/4.
 - Append the shared outro in templates/shared-outro: “Smarter choices. A better future. Follow for more.”
 - Deliver video downloads through GitHub links; workspace download links did not work for the user.
+- Choose the visual form separately for each passage: use characters only for necessary interactions or concrete situations; use objects, metaphors, charts, diagrams, or short text for other passages. Do not carry the same two characters through an entire video by default.
