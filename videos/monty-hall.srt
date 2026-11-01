@@ -1,0 +1,115 @@
+1
+00:00:00,300 --> 00:00:04,933
+There is a probability puzzle that has tripped up even mathematicians.
+
+2
+00:00:05,233 --> 00:00:11,000
+The arithmetic is simple. The difficult part is doubting an answer that feels obvious.
+
+3
+00:00:11,300 --> 00:00:16,633
+Imagine three doors. Behind one is a car. Behind the other two, goats.
+
+4
+00:00:16,933 --> 00:00:21,267
+You choose door one. But before it opens, the host steps in.
+
+5
+00:00:21,567 --> 00:00:26,100
+He knows where the car is. He must open another door showing a goat.
+
+6
+00:00:26,400 --> 00:00:29,200
+And he always offers you the chance to switch.
+
+7
+00:00:29,500 --> 00:00:33,967
+He opens door three. A goat. Now only two doors remain.
+
+8
+00:00:34,267 --> 00:00:37,067
+Do you keep your door, or take the other one?
+
+9
+00:00:37,367 --> 00:00:42,833
+It feels like fifty-fifty. One car. Two doors. What could be missing?
+
+10
+00:00:43,133 --> 00:00:47,967
+But switching wins two-thirds of the time. Staying wins only one-third.
+
+11
+00:00:48,267 --> 00:00:51,033
+The trick is to look back at your first choice.
+
+12
+00:00:51,333 --> 00:00:55,667
+At the start, your door had a one-in-three chance of hiding the car.
+
+13
+00:00:55,967 --> 00:00:59,567
+The other two doors, together, had a two-in-three chance.
+
+14
+00:00:59,867 --> 00:01:04,933
+The host cannot reveal a car. His choice is constrained by what he knows.
+
+15
+00:01:05,233 --> 00:01:08,500
+If your first pick is the car, switching loses.
+
+16
+00:01:08,800 --> 00:01:12,900
+But if your first pick is either goat, he removes the other goat.
+
+17
+00:01:13,200 --> 00:01:15,933
+Switching then takes you straight to the car.
+
+18
+00:01:16,233 --> 00:01:21,100
+Three equally likely starting positions. Switching wins in two of them.
+
+19
+00:01:21,400 --> 00:01:25,000
+Still feels strange? Imagine one hundred doors.
+
+20
+00:01:25,300 --> 00:01:29,433
+You pick one. The host opens ninety-eight others, all goats.
+
+21
+00:01:29,733 --> 00:01:34,600
+Would you really trust your first guess over the one door he was forced to leave?
+
+22
+00:01:34,900 --> 00:01:41,500
+Switching wins whenever your first guess was wrong. Here, that is ninety-nine times out of a hundred.
+
+23
+00:01:41,800 --> 00:01:45,133
+Back to three doors. The same logic holds.
+
+24
+00:01:45,433 --> 00:01:49,633
+Two doors remain. But they did not get there in the same way.
+
+25
+00:01:49,933 --> 00:01:52,400
+The lesson is bigger than a game show.
+
+26
+00:01:52,700 --> 00:01:57,667
+Information is not just what you see. It is how what you see was chosen.
+
+27
+00:01:59,067 --> 00:02:00,567
+Smarter choices.
+
+28
+00:02:00,867 --> 00:02:02,300
+A better future.
+
+29
+00:02:02,600 --> 00:02:04,033
+Follow for more.
