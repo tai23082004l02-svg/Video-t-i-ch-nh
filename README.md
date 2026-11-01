@@ -38,3 +38,7 @@ GitHub lưu tài liệu và mã nguồn; chat mới vẫn cần được cấp q
 ## Lưu ý về các video cũ
 
 Các bản đã giao được giữ nguyên, kể cả bản thử. Phụ đề của chúng còn thấp và dài theo bố cục cũ. Quy tắc vùng an toàn và phụ đề ngắn trong tài liệu áp dụng cho video mới; không coi bố cục cũ là mẫu mặc định.
+
+## Series The Intuition Glitch
+
+Xem [kế hoạch và ghi chú tập Birthday Paradox](docs/series/the-intuition-glitch.md). Composition mới dùng phụ đề ngắn và vùng an toàn mới; không sao chép tọa độ phụ đề từ các bản lịch sử.

@@ -90,3 +90,7 @@ Các video cũ đặt phụ đề quá thấp, dài và có dòng chân trang s�
 | Outro chung | `videos/shared-outro.mp4` | Đã duyệt dùng lại |
 
 Các bản cũ đã kiểm tra giải mã MP4 và một số khung hình khi dựng; không đồng nghĩa đã kiểm tra UI thực tế trên mọi nền tảng. Chưa có video nào trong danh sách được xuất lại theo yêu cầu vùng an toàn mới nhất.
+
+## Series đang triển khai
+
+Người dùng đã bắt đầu The Intuition Glitch (nghịch lý toán/xác suất). Tập mới đầu tiên là Birthday Paradox; xem docs/series/the-intuition-glitch.md. Monty Hall là bản đã làm trước. Giữ kịch bản có sức dẫn, không tự ép ngắn. Birthday Paradox dùng phụ đề ngắn căn từ timing âm vị và bố cục vùng an toàn mới; các video lịch sử phía trên chưa được xuất lại.

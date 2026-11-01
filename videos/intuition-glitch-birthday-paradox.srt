@@ -1,0 +1,266 @@
+1
+00:00:00,467 --> 00:00:02,200
+How many strangers would you need
+
+2
+00:00:02,200 --> 00:00:04,567
+in a room before a shared birthday
+
+3
+00:00:04,567 --> 00:00:06,500
+becomes more likely than not?
+
+4
+00:00:07,233 --> 00:00:09,067
+A hundred? Two hundred?
+
+5
+00:00:10,000 --> 00:00:11,300
+Try twenty-three.
+
+6
+00:00:12,133 --> 00:00:13,433
+If that feels wrong,
+
+7
+00:00:13,433 --> 00:00:14,967
+hold on to that feeling.
+
+8
+00:00:15,433 --> 00:00:17,200
+It points to the exact mistake
+
+9
+00:00:17,200 --> 00:00:18,733
+this puzzle exposes.
+
+10
+00:00:19,233 --> 00:00:21,067
+You may be imagining someone
+
+11
+00:00:21,067 --> 00:00:22,500
+matching your birthday.
+
+12
+00:00:22,900 --> 00:00:24,867
+But nobody has to match you.
+
+13
+00:00:25,533 --> 00:00:27,267
+Any two people can match.
+
+14
+00:00:27,733 --> 00:00:29,667
+And every person who enters
+
+15
+00:00:29,667 --> 00:00:31,000
+creates more chances
+
+16
+00:00:31,000 --> 00:00:32,167
+than the one before.
+
+17
+00:00:32,567 --> 00:00:34,033
+The second person creates
+
+18
+00:00:34,033 --> 00:00:35,533
+one possible pair.
+
+19
+00:00:35,967 --> 00:00:37,667
+The third adds two more.
+
+20
+00:00:38,067 --> 00:00:39,667
+By the time twenty-three people
+
+21
+00:00:39,667 --> 00:00:40,967
+are standing here,
+
+22
+00:00:40,967 --> 00:00:43,533
+there are 253 pairs.
+
+23
+00:00:43,933 --> 00:00:46,167
+You were looking at a small crowd.
+
+24
+00:00:46,167 --> 00:00:47,533
+The probability was looking
+
+25
+00:00:47,533 --> 00:00:49,067
+at a much bigger network.
+
+26
+00:00:49,500 --> 00:00:52,100
+But counting pairs is only the
+clue.
+
+27
+00:00:52,100 --> 00:00:53,700
+Here is the calculation.
+
+28
+00:00:54,167 --> 00:00:55,133
+Instead of asking
+
+29
+00:00:55,133 --> 00:00:56,633
+when birthdays collide,
+
+30
+00:00:56,967 --> 00:00:57,867
+ask what it takes
+
+31
+00:00:57,867 --> 00:01:00,067
+for every birthday to be
+different.
+
+32
+00:01:00,500 --> 00:01:01,900
+The first person can have
+
+33
+00:01:01,900 --> 00:01:02,933
+any birthday.
+
+34
+00:01:03,367 --> 00:01:04,600
+The second must avoid
+
+35
+00:01:04,600 --> 00:01:06,200
+one occupied date.
+
+36
+00:01:06,700 --> 00:01:11,533
+That leaves 364 out of 365 days.
+
+37
+00:01:11,967 --> 00:01:14,067
+If both birthdays are different,
+
+38
+00:01:14,067 --> 00:01:16,167
+the third must avoid two dates.
+
+39
+00:01:16,633 --> 00:01:19,633
+Now 363 days remain.
+
+40
+00:01:20,033 --> 00:01:22,133
+Keep multiplying those chances
+
+41
+00:01:22,133 --> 00:01:23,367
+as people enter.
+
+42
+00:01:23,900 --> 00:01:25,533
+At twenty-three people,
+
+43
+00:01:25,533 --> 00:01:27,100
+the chance that every birthday
+
+44
+00:01:27,100 --> 00:01:30,633
+is different is about 49.3%.
+
+45
+00:01:31,100 --> 00:01:32,833
+So at least one shared birthday
+
+46
+00:01:32,833 --> 00:01:33,767
+is the rest:
+
+47
+00:01:34,100 --> 00:01:36,267
+about 50.7%.
+
+48
+00:01:37,067 --> 00:01:39,100
+For this classic calculation,
+
+49
+00:01:39,100 --> 00:01:41,033
+assume independent birthdays,
+
+50
+00:01:41,300 --> 00:01:44,900
+equally likely across 365 days.
+
+51
+00:01:44,900 --> 00:01:46,200
+Ignore leap day.
+
+52
+00:01:46,700 --> 00:01:48,400
+That does not promise a match
+
+53
+00:01:48,400 --> 00:01:49,900
+in this particular room.
+
+54
+00:01:50,367 --> 00:01:53,000
+It means that across many such
+rooms,
+
+55
+00:01:53,000 --> 00:01:54,733
+just over half would have one.
+
+56
+00:01:55,200 --> 00:01:56,600
+And with fifty people,
+
+57
+00:01:56,600 --> 00:01:59,200
+the chance exceeds 97%.
+
+58
+00:01:59,700 --> 00:02:01,067
+The surprise was never
+
+59
+00:02:01,067 --> 00:02:03,133
+how many birthdays fit in a year.
+
+60
+00:02:03,633 --> 00:02:05,133
+It was how many comparisons
+
+61
+00:02:05,133 --> 00:02:06,300
+fit in a room.
+
+62
+00:02:06,733 --> 00:02:08,833
+Your intuition counted people.
+
+63
+00:02:08,833 --> 00:02:10,967
+The probability counted pairs.
+
+64
+00:02:12,667 --> 00:02:14,167
+Smarter choices.
+
+65
+00:02:14,467 --> 00:02:15,900
+A better future.
+
+66
+00:02:16,200 --> 00:02:17,633
+Follow for more.
