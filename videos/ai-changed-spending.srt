@@ -1,0 +1,27 @@
+1
+00:00:00,300 --> 00:00:05,067
+AI is not just changing how we work. It is changing how we spend.
+
+2
+00:00:05,367 --> 00:00:10,033
+Stores use AI to predict what you might buy, and what to show you next.
+
+3
+00:00:10,333 --> 00:00:15,800
+That perfect recommendation? It can make an unplanned purchase feel like your idea.
+
+4
+00:00:16,100 --> 00:00:18,767
+But the same technology can work for you.
+
+5
+00:00:19,067 --> 00:00:23,800
+It can help categorize transactions and reveal spending patterns you missed.
+
+6
+00:00:24,100 --> 00:00:28,833
+Before you tap buy, pause. Does this fit your budget, or just your feed?
+
+7
+00:00:29,133 --> 00:00:33,367
+Let AI help you make decisions. Keep the final choice yours.
