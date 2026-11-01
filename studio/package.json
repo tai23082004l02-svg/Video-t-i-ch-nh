@@ -1,0 +1,16 @@
+{
+  "name": "finance-video-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "studio": "remotion studio src/index.tsx --port=3000",
+    "render": "remotion render src/index.tsx",
+    "compositions": "remotion compositions src/index.tsx"
+  },
+  "dependencies": {
+    "remotion": "4.0.539",
+    "@remotion/cli": "4.0.539",
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  }
+}

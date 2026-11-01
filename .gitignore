@@ -1,0 +1,14 @@
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+studio/out/
+studio/.cache/
+studio/.remotion/
+tools/kokoro/models/
+tools/kokoro/out/
+tools/kokoro/.uv-cache/
+.env
+.env.*
+!.env.example
+*.log

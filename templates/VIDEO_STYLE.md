@@ -11,3 +11,11 @@
 - Append the shared outro in templates/shared-outro: “Smarter choices. A better future. Follow for more.”
 - Deliver video downloads through GitHub links; workspace download links did not work for the user.
 - Choose the visual form separately for each passage: use characters only for necessary interactions or concrete situations; use objects, metaphors, charts, diagrams, or short text for other passages. Do not carry the same two characters through an entire video by default.
+
+## Latest caption/UI requirements
+
+- Historical exports have low, long captions and footers. Do not copy those placements for new videos.
+- New captions should be short, usually 1–2 lines, around 65–75% of frame height as a starting point; reserve bottom and right UI space and reflow illustrations accordingly.
+- For 1080x1920, an initial conservative layout is main content x80–900, caption box y1240–1440, with lower ~480px mostly clear. Validate against intended platform/device; this is not a universal platform guarantee.
+- Remove bottom-edge footers. Check critical outro content too. Supply English SRT including outro, but do not rely on plain SRT to control placement.
+- See docs/PROJECT_MEMORY.md for the authoritative, detailed handoff.
