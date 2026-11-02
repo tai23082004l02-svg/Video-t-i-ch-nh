@@ -1,0 +1,30 @@
+{
+  "title": "Why Not Switch Forever? — The Two-Envelope Paradox",
+  "model": "Two envelopes, one with twice as much money as the other, picked uniformly at random. First discuss a fixed $10/$20 pair. Then use an explicit finite prior: organizer chooses $10/$20 or $20/$40 with equal probability, and the participant picks either envelope with equal probability independently. No switching costs. All expected values finite.",
+  "voice": "am_michael",
+  "speed": 1.03,
+  "lines": [
+    {"scene":"hook","text":"Two envelopes. One holds twice as much money as the other. You pick one. Should you switch?"},
+    {"scene":"temptation","text":"Here is an argument that makes switching sound irresistible. Call the amount in your envelope A."},
+    {"scene":"temptation","text":"The other envelope could contain twice A, or half A. Give each possibility a fifty percent chance."},
+    {"scene":"temptation","text":"Then its expected value is half of twice A, plus half of half A. That is one point two five A."},
+    {"scene":"loop","text":"A twenty-five percent bonus, just for switching? But now apply the same argument to the envelope you switched to."},
+    {"scene":"loop","text":"It says switch back. Then switch again. You have created an endless money machine without changing either envelope."},
+    {"scene":"fixed","text":"Let us pin down the money. Suppose the envelopes contain ten dollars and twenty dollars."},
+    {"scene":"fixed","text":"If you picked ten, switching gains ten. If you picked twenty, switching loses ten."},
+    {"scene":"fixed","text":"With a random initial choice, those equally likely gains and losses cancel. Either envelope starts with an expected value of fifteen dollars."},
+    {"scene":"mistake","text":"Notice that A was ten in the first case, but twenty in the second. It was not one fixed number across both cases."},
+    {"scene":"mistake","text":"If you instead fix A to an amount you have actually seen, you must ask a different question: how likely are the two possibilities given that amount?"},
+    {"scene":"model","text":"That depends on how the money was put into the envelopes. Two possible amounts do not automatically mean equal probabilities."},
+    {"scene":"model","text":"For a concrete example, suppose the organizer chooses one of two pairs with equal probability: ten and twenty dollars, or twenty and forty."},
+    {"scene":"twenty","text":"You pick an envelope at random, open it, and find twenty dollars."},
+    {"scene":"twenty","text":"Here, the other amount really is equally likely to be ten or forty. Switching has an expected payout of twenty-five dollars."},
+    {"scene":"twenty","text":"So the original calculation can be right for a particular amount, under a particular model."},
+    {"scene":"forty","text":"But what if you open your envelope and find forty dollars? In this same model, the other envelope must contain twenty."},
+    {"scene":"forty","text":"Eighty dollars is not possible. The fifty-fifty assumption has vanished, and switching would lose money."},
+    {"scene":"compare","text":"Before opening, either randomly selected envelope has the same expected value: twenty-two dollars and fifty cents."},
+    {"scene":"compare","text":"After opening, the amount you see can give you useful information. That does not make every possible switch an improvement."},
+    {"scene":"close","text":"The glitch was not in multiplication. It was in treating an unknown amount and a fixed observed amount as if they came with the same probabilities."},
+    {"scene":"close","text":"Before trusting an expected value, ask: what is random, what is fixed, and what information am I using?"}
+  ]
+}

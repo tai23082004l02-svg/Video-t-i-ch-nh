@@ -62,7 +62,6 @@ Birthday Paradox là tập đang triển khai, không phải yêu cầu sản xu
 
 - Medical Test / Base Rate: kết quả dương tính và tỷ lệ nền.
 - Simpson’s Paradox: kết quả đảo chiều khi gộp nhóm.
-- Two-Envelope Paradox: lập luận đổi phong bì mãi mãi.
 - Friendship Paradox: vì sao bạn bè có nhiều bạn hơn theo một số cách lấy mẫu.
 - Hilbert’s Hotel: khách sạn đầy vẫn nhận thêm khách.
 - Coastline Paradox: thước nhỏ hơn, bờ biển dài hơn.
@@ -120,3 +119,20 @@ Kiểm tra bản dựng ngày 2026-11-01: render đủ **4.621 frame**, H.264 10
 - Bản giao: `videos/intuition-glitch-st-petersburg-paradox.mp4`, `.srt`, `-script.md`. Giữ Michael, Liberation Serif, phụ đề Monty Hall và outro chung.
 
 Kiểm tra bản dựng ngày 2026-11-02: render đủ **5.275 frame**, H.264 1080×1920 30fps + AAC, khoảng **175.85 giây**. Giải mã toàn bộ MP4 bằng FFmpeg không lỗi. Đã rà 11 khung hình đại diện, gồm phép tính và outro; SRT có 28 cue không chồng nhau, gồm outro. WAV 24 kHz mono có tín hiệu ở cả 25 đoạn lời đọc và không clipping. Phép tính được kiểm tra bằng phân số chính xác. Chưa rà phát âm bằng nghe trực tiếp hoặc thử UI nền tảng đăng.
+
+## Two-Envelope Paradox — tập tiếp theo đã triển khai
+
+**Why Not Switch Forever? — The Two-Envelope Paradox**. Người dùng yêu cầu chủ đề kế tiếp sau St. Petersburg. Bản mới chờ phản hồi, chưa thay thế mẫu hình ảnh Birthday Paradox dynamic-layout đã duyệt.
+
+- Một phong bì có số tiền gấp đôi phong bì kia; chọn ban đầu ngẫu nhiên, không phí đổi.
+- Lập luận hấp dẫn: E[other|A] = ½ × 2A + ½ × A/2 = 1,25A. Hai trọng số ½ không tự động đúng khi đã cố định A theo số tiền vừa thấy.
+- Cặp cố định $10/$20: đổi được +$10 hoặc −$10, mỗi trường hợp xác suất ½. Hai phong bì đều có kỳ vọng $15; A nhận giá trị khác nhau ở hai trường hợp.
+- Mô hình hữu hạn rõ ràng: người tổ chức chọn cặp $10/$20 hoặc $20/$40, mỗi cặp xác suất ½; sau đó chọn phong bì độc lập, đều. Bốn kết quả (chosen,other) = (10,20),(20,10),(20,40),(40,20), mỗi kết quả xác suất ¼.
+- Khi thấy $20: hai trường hợp còn lại đồng xác suất, E[other|A=20]=$25. Khi thấy $40: other=$20 chắc chắn, xác suất $80 bằng 0. Khi thấy $10: other=$20 chắc chắn.
+- Trước khi mở, E[chosen]=E[other]=$22,50. Phân biệt kỳ vọng không điều kiện với kỳ vọng theo số tiền vừa thấy. Không kết luận đổi luôn sai hoặc luôn đúng.
+- Tất cả ví dụ có kỳ vọng hữu hạn; không mở rộng kết luận sang các mô hình đuôi vô hạn với kỳ vọng không xác định.
+- Kịch bản: `scripts/intuition-glitch/two-envelope-paradox.json`; generator: `tools/kokoro/make_two_envelope_paradox.py`.
+- Composition `TwoEnvelope`: `studio/src/TwoEnvelope.tsx`; cue `twoEnvelopeData.ts`, WAV riêng.
+- Bản giao: `videos/intuition-glitch-two-envelope-paradox.mp4`, `.srt`, `-script.md`. Giữ Michael, Liberation Serif, phụ đề Monty Hall và outro chung.
+
+Kiểm tra bản dựng ngày 2026-11-02: render đủ **5.252 frame**, H.264 1080×1920 30fps + AAC, khoảng **175.08 giây**. Giải mã toàn bộ MP4 bằng FFmpeg không lỗi. Đã rà 12 khung hình đại diện, gồm mô hình, kỳ vọng có điều kiện và outro. SRT có 25 cue không chồng nhau, gồm outro. WAV 24 kHz mono có tín hiệu ở 22 đoạn lời đọc và không clipping. Kỳ vọng/xác suất được kiểm tra bằng phân số chính xác. Chưa rà phát âm bằng nghe trực tiếp hoặc thử UI nền tảng đăng.

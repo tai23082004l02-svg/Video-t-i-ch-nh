@@ -1,0 +1,128 @@
+1
+00:00:00,200 --> 00:00:06,500
+Two envelopes. One holds twice as much money as the other. You
+pick one. Should you switch?
+
+2
+00:00:06,800 --> 00:00:13,033
+Here is an argument that makes switching sound irresistible.
+Call the amount in your envelope A.
+
+3
+00:00:13,200 --> 00:00:19,833
+The other envelope could contain twice A, or half A. Give each
+possibility a fifty percent chance.
+
+4
+00:00:20,000 --> 00:00:26,967
+Then its expected value is half of twice A, plus half of half
+A. That is one point two five A.
+
+5
+00:00:27,267 --> 00:00:35,133
+A twenty-five percent bonus, just for switching? But now apply
+the same argument to the envelope you switched to.
+
+6
+00:00:35,300 --> 00:00:42,833
+It says switch back. Then switch again. You have created an
+endless money machine without changing either envelope.
+
+7
+00:00:43,133 --> 00:00:48,967
+Let us pin down the money. Suppose the envelopes contain ten
+dollars and twenty dollars.
+
+8
+00:00:49,133 --> 00:00:54,400
+If you picked ten, switching gains ten. If you picked twenty,
+switching loses ten.
+
+9
+00:00:54,567 --> 00:01:04,500
+With a random initial choice, those equally likely gains and
+losses cancel. Either envelope starts with an expected value
+of fifteen dollars.
+
+10
+00:01:04,800 --> 00:01:12,467
+Notice that A was ten in the first case, but twenty in the
+second. It was not one fixed number across both cases.
+
+11
+00:01:12,633 --> 00:01:22,067
+If you instead fix A to an amount you have actually seen, you
+must ask a different question: how likely are the two
+possibilities given that amount?
+
+12
+00:01:22,367 --> 00:01:30,633
+That depends on how the money was put into the envelopes. Two
+possible amounts do not automatically mean equal
+probabilities.
+
+13
+00:01:30,800 --> 00:01:40,967
+For a concrete example, suppose the organizer chooses one of
+two pairs with equal probability: ten and twenty dollars, or
+twenty and forty.
+
+14
+00:01:41,267 --> 00:01:45,733
+You pick an envelope at random, open it, and find twenty
+dollars.
+
+15
+00:01:45,900 --> 00:01:54,500
+Here, the other amount really is equally likely to be ten or
+forty. Switching has an expected payout of twenty-five
+dollars.
+
+16
+00:01:54,667 --> 00:02:00,467
+So the original calculation can be right for a particular
+amount, under a particular model.
+
+17
+00:02:00,767 --> 00:02:08,767
+But what if you open your envelope and find forty dollars? In
+this same model, the other envelope must contain twenty.
+
+18
+00:02:08,933 --> 00:02:15,400
+Eighty dollars is not possible. The fifty-fifty assumption has
+vanished, and switching would lose money.
+
+19
+00:02:15,700 --> 00:02:23,633
+Before opening, either randomly selected envelope has the same
+expected value: twenty-two dollars and fifty cents.
+
+20
+00:02:23,800 --> 00:02:31,667
+After opening, the amount you see can give you useful
+information. That does not make every possible switch an
+improvement.
+
+21
+00:02:31,967 --> 00:02:41,633
+The glitch was not in multiplication. It was in treating an
+unknown amount and a fixed observed amount as if they came
+with the same probabilities.
+
+22
+00:02:41,800 --> 00:02:48,800
+Before trusting an expected value, ask: what is random, what
+is fixed, and what information am I using?
+
+23
+00:02:49,000 --> 00:02:50,500
+Smarter choices.
+
+24
+00:02:50,800 --> 00:02:52,233
+A better future.
+
+25
+00:02:52,533 --> 00:02:53,967
+Follow for more.
