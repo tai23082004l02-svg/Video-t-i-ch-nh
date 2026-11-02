@@ -1,0 +1,33 @@
+{
+  "title": "An Infinite Average. A Finite Wallet. — The St. Petersburg Paradox",
+  "model": "Independent fair coin tosses until the first head. If the first head is on toss n, gross payout is 2^n US dollars. Ideal model has no payout limit and a solvent payer; entry fee is paid once. A separate capped-payout variant pays min(2^n, 1024) dollars.",
+  "voice": "am_michael",
+  "speed": 1.03,
+  "lines": [
+    {"scene":"hook","text":"How much would you pay to play a game with an infinite expected payout? Ten dollars? A hundred? Your life savings?"},
+    {"scene":"hook","text":"Before you answer, let me show you the game. The rules fit on a single coin."},
+    {"scene":"rules","text":"We flip a fair coin until the first heads. Each toss is independent."},
+    {"scene":"rules","text":"Heads on the first toss pays two dollars. Tails, then heads, pays four."},
+    {"scene":"rules","text":"Two tails, then heads, pays eight. Every extra tails doubles the prize."},
+    {"scene":"rules","text":"The entry fee is separate. This is the prize you receive before subtracting what you paid to play."},
+    {"scene":"odds","text":"Now match each prize with its probability. Two dollars has a one-in-two chance."},
+    {"scene":"odds","text":"Four dollars has a one-in-four chance. Eight dollars has a one-in-eight chance."},
+    {"scene":"odds","text":"Multiply each prize by its probability. Each possible stopping point contributes exactly one dollar to the expected payout."},
+    {"scene":"infinity","text":"One dollar, plus one dollar, plus one dollar. With no limit on the number of tosses, the sum never stops growing."},
+    {"scene":"infinity","text":"The expected payout is infinite. This is the Saint Petersburg paradox."},
+    {"scene":"typical","text":"But infinite expectation does not mean an infinite prize. The game ends with a finite payout with probability one."},
+    {"scene":"typical","text":"Half the time, you get just two dollars. Three quarters of the time, you get four dollars or less."},
+    {"scene":"typical","text":"And seven out of eight times, the prize is eight dollars or less."},
+    {"scene":"tail","text":"So what is pulling the average upward? Extremely rare prizes that are even more enormous."},
+    {"scene":"tail","text":"A first heads on toss twenty pays over a million dollars. Its probability is about one in a million."},
+    {"scene":"tail","text":"That outcome still adds exactly one dollar to the expected payout, just like the first toss."},
+    {"scene":"wallet","text":"Your hesitation is not a failure of arithmetic. You have a finite wallet, and you only get to play once."},
+    {"scene":"wallet","text":"Losing money you need can matter far more than the same number of dollars added to an already huge fortune."},
+    {"scene":"wallet","text":"Expected utility models that difference. It values outcomes through your wealth and preferences, rather than dollars alone."},
+    {"scene":"cap","text":"And a real organizer cannot promise unlimited money. Put a ceiling on the payout, and you have changed the game."},
+    {"scene":"cap","text":"For example, cap every prize at one thousand twenty-four dollars. Now the expected payout is just eleven dollars, before the entry fee."},
+    {"scene":"cap","text":"That ceiling removes the endless chain of larger and larger prizes that made the original expectation infinite."},
+    {"scene":"close","text":"There is no single ticket price everyone must accept. A mathematical expectation and a personal decision answer different questions."},
+    {"scene":"close","text":"The average can be infinite. Your wallet, and your willingness to risk it, are not."}
+  ]
+}

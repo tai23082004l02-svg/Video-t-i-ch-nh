@@ -62,7 +62,6 @@ Birthday Paradox là tập đang triển khai, không phải yêu cầu sản xu
 
 - Medical Test / Base Rate: kết quả dương tính và tỷ lệ nền.
 - Simpson’s Paradox: kết quả đảo chiều khi gộp nhóm.
-- St. Petersburg Paradox: kỳ vọng vô hạn và số tiền thực tế sẵn sàng trả.
 - Two-Envelope Paradox: lập luận đổi phong bì mãi mãi.
 - Friendship Paradox: vì sao bạn bè có nhiều bạn hơn theo một số cách lấy mẫu.
 - Hilbert’s Hotel: khách sạn đầy vẫn nhận thêm khách.
@@ -105,3 +104,19 @@ Bản mới `videos/intuition-glitch-birthday-paradox-dynamic-layout.mp4` làm l
 - Giữ Michael, Liberation Serif, phụ đề theo câu kiểu Monty Hall và outro chung bỏ 9 frame im lặng đầu.
 
 Kiểm tra bản dựng ngày 2026-11-01: render đủ **4.621 frame**, H.264 1080×1920 30fps + AAC, khoảng **154,05 giây**. Giải mã toàn bộ bằng FFmpeg không lỗi. Đã xem khung đại diện của câu hỏi, lịch đều/không đều, lấy mẫu, tính toán, biểu đồ, giả định, live tracker, kết và outro. SRT có 28 cue không chồng nhau, gồm outro. WAV 24 kHz mono có tín hiệu ở cả 25 đoạn lời đọc, không clipping. Chưa rà phát âm bằng nghe trực tiếp hoặc thử UI nền tảng đăng.
+
+## St. Petersburg Paradox — tập tiếp theo đã triển khai
+
+**An Infinite Average. A Finite Wallet. — The St. Petersburg Paradox**. Sau tập Inspection Paradox, người dùng yêu cầu triển khai chủ đề kế tiếp trong danh sách: St. Petersburg. Đây là bản mới chờ phản hồi, chưa thay thế mẫu Birthday Paradox dynamic-layout đã duyệt.
+
+- Tung đồng xu công bằng, độc lập đến ngửa đầu tiên ở lần n; tiền thưởng gộp là 2^n USD. Phí vào chơi trả riêng.
+- Xác suất 2^(-n) nhân tiền thưởng 2^n luôn bằng $1; tổng kỳ vọng vô hạn trong mô hình không có trần thưởng, với bên trả thưởng đủ khả năng chi trả.
+- Trò chơi dừng với tiền thưởng hữu hạn với xác suất 1. Xác suất nhận tối đa $2, $4, $8 lần lượt là 1/2, 3/4, 7/8.
+- Ngửa đầu tiên ở lần 20: $1.048.576, xác suất 1/1.048.576; đóng góp kỳ vọng vẫn là $1.
+- Biến thể trần $1.024: E[min(2^N,1024)] = 9 × $1 + $1.024 × 1/512 = **$11**, trước phí vào chơi. Không nhầm trần tiền thưởng với cắt bỏ mọi kết quả sau lần tung 10.
+- Expected utility phụ thuộc tài sản và sở thích; đường cong lõm là minh họa một loại sở thích, không áp đặt một giá vé hợp lý duy nhất hoặc khẳng định mọi hàm utility đều giải quyết nghịch lý.
+- Kịch bản: `scripts/intuition-glitch/st-petersburg-paradox.json`; generator: `tools/kokoro/make_st_petersburg_paradox.py`.
+- Composition `StPetersburg`: `studio/src/StPetersburg.tsx`, cue `stPetersburgData.ts`, audio riêng.
+- Bản giao: `videos/intuition-glitch-st-petersburg-paradox.mp4`, `.srt`, `-script.md`. Giữ Michael, Liberation Serif, phụ đề Monty Hall và outro chung.
+
+Kiểm tra bản dựng ngày 2026-11-02: render đủ **5.275 frame**, H.264 1080×1920 30fps + AAC, khoảng **175.85 giây**. Giải mã toàn bộ MP4 bằng FFmpeg không lỗi. Đã rà 11 khung hình đại diện, gồm phép tính và outro; SRT có 28 cue không chồng nhau, gồm outro. WAV 24 kHz mono có tín hiệu ở cả 25 đoạn lời đọc và không clipping. Phép tính được kiểm tra bằng phân số chính xác. Chưa rà phát âm bằng nghe trực tiếp hoặc thử UI nền tảng đăng.
